@@ -3,6 +3,16 @@ const strg = window.localStorage;
 const byd = (x) => dcmnt.getElementById(x);
 const sll = (s, r) => Array.from((r || dcmnt).querySelectorAll(s));
 const dflt = { l: "lcl-thm" };
+const rq = (f) => window.requestAnimationFrame(f);
+const nM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const pop = (el) => {
+  if (nM || !el) return;
+  const cls = el.id === "fab" ? "fab--spin" : "thm-pop";
+  el.classList.remove(cls);
+  void el.offsetWidth;
+  el.classList.add(cls);
+};
 
 const thmBtn = byd("thm-btn");
 const cur = strg.getItem(dflt.l);
@@ -17,6 +27,7 @@ if (thmBtn) {
     dcmnt.documentElement.setAttribute("data-thm", now);
     strg.setItem(dflt.l, now);
     thmBtn.textContent = now === "drk" ? "☀️" : "🌙";
+    pop(thmBtn);
   });
   if (dcmnt.documentElement.getAttribute("data-thm") === "drk") thmBtn.textContent = "☀️";
 }
@@ -91,9 +102,6 @@ window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") clsSdbr();
 });
 
-const rq = (f) => window.requestAnimationFrame(f);
-const nM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
 sll(".sec, .crd, .wrk-itm, .sdbr-auth, .gal-fig, .vid-card, .dtl, .ntf, .chps, .btns, .src-lst").forEach((e) => {
   const p = e.parentElement;
   const i = p ? Array.prototype.indexOf.call(p.children, e) : 0;
@@ -126,7 +134,7 @@ if (!nM) {
         const h = cnt.scrollHeight;
         cnt.style.height = "0px";
         rq(() => {
-          cnt.style.transition = "height 450ms cubic-bezier(0.05,0.7,0.1,1)";
+          cnt.style.transition = "height 500ms cubic-bezier(0.34,1.3,0.64,1)";
           cnt.style.height = h + "px";
         });
         const fn = () => {
@@ -151,6 +159,29 @@ window.addEventListener("scroll", nScr, { passive: true });
 nScr();
 if (fab) {
   fab.addEventListener("click", () => {
+    pop(fab);
     window.scrollTo({ top: 0, behavior: nM ? "auto" : "smooth" });
+  });
+}
+
+if (!nM) {
+  dcmnt.addEventListener("click", (e) => {
+    const a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || a.hasAttribute("download") || a.target === "_blank") return;
+    if (a.origin !== location.origin) return;
+    const h = a.getAttribute("href") || "";
+    if (!h || h.startsWith("#") || h.startsWith("?")) return;
+    window.setTimeout(() => {
+      if (!dcmnt.querySelector(".m3-load")) {
+        const el = dcmnt.createElement("div");
+        el.className = "m3-load";
+        el.setAttribute("aria-hidden", "true");
+        dcmnt.body.appendChild(el);
+      }
+    }, 220);
+  });
+  window.addEventListener("pageshow", () => {
+    const l = dcmnt.querySelector(".m3-load");
+    if (l) l.remove();
   });
 }
