@@ -92,7 +92,7 @@ window.addEventListener("keydown", (e) => {
 });
 
 const rq = (f) => window.requestAnimationFrame(f);
-const noMo = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const nM = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 sll(".sec, .crd, .wrk-itm, .sdbr-auth, .gal-fig, .vid-card, .dtl, .ntf, .chps, .btns, .src-lst").forEach((e) => {
   const p = e.parentElement;
@@ -100,7 +100,7 @@ sll(".sec, .crd, .wrk-itm, .sdbr-auth, .gal-fig, .vid-card, .dtl, .ntf, .chps, .
   e.style.setProperty("--i", String(Math.min(i, 14)));
 });
 
-if (!noMo) {
+if (!nM) {
   sll("details.dtl").forEach((d) => {
     const sm = d.querySelector("summary");
     const cnt = d.querySelector(".dtl-cnt");
@@ -142,15 +142,15 @@ if (!noMo) {
 
 const fab = byd("fab");
 const tbr = dcmnt.querySelector(".tbr");
-const onScr = () => {
+const nScr = () => {
   const y = window.scrollY || 0;
   if (fab) fab.classList.toggle("fab--vis", y > 480);
   if (tbr) tbr.classList.toggle("tbr--hi", y > 12);
 };
-window.addEventListener("scroll", onScr, { passive: true });
-onScr();
+window.addEventListener("scroll", nScr, { passive: true });
+nScr();
 if (fab) {
   fab.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: noMo ? "auto" : "smooth" });
+    window.scrollTo({ top: 0, behavior: nM ? "auto" : "smooth" });
   });
 }
