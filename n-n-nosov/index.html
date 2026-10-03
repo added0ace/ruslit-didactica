@@ -16,8 +16,12 @@
 <aside class="sdbr" id="sdbr">
   <p class="sdbr-ttl">Произведения</p>
   <input class="sdbr-fltr" id="fltr" type="search" placeholder="Фильтр: автор или название" aria-label="Фильтр">
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Народное творчество <span class="sdbr-cnt">8</span></span></summary>
+  <div class="sdbr-sort" role="group" aria-label="Сортировка авторов">
+    <button class="md3-chip md3-chip-strong sdbr-sort-btn" type="button" data-sort="pop">Популярность</button>
+    <button class="md3-chip sdbr-sort-btn" type="button" data-sort="az">Алфавит</button>
+  </div>
+  <details class="sdbr-auth" data-pop="8" data-az="творчество">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../narodnoe-tvorchestvo/" aria-label="Страница автора Народное творчество"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%BE%D0%B2_%D0%91%D0%B0%D0%B1%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D1%8B_%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8_1867.jpg/330px-%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%BE%D0%B2_%D0%91%D0%B0%D0%B1%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D1%8B_%D1%81%D0%BA%D0%B0%D0%B7%D0%BA%D0%B8_1867.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Народное творчество <span class="sdbr-cnt">8</span></span></summary>
     <a class="sdbr-wrk" href="../narodnoe-tvorchestvo/bylina-tri-poezdki-ili-muromca/">Былина «Три поездки Ильи Муромца»</a>
     <a class="sdbr-wrk" href="../narodnoe-tvorchestvo/bylina-ilya-muromec-iscelenie/">Былина «Илья Муромец. Исцеление»</a>
     <a class="sdbr-wrk" href="../narodnoe-tvorchestvo/bylina-ilya-muromec-i-solovej-razbojnik/">Былина «Илья Муромец и Соловей-разбойник»</a>
@@ -27,8 +31,8 @@
     <a class="sdbr-wrk" href="../narodnoe-tvorchestvo/skazka-venik/">Сказка «Веник»</a>
     <a class="sdbr-wrk" href="../narodnoe-tvorchestvo/zagadki-poslovicy-i-pogovorki/">Загадки, пословицы и поговорки</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Г.Х. Андерсен <span class="sdbr-cnt">7</span></span></summary>
+  <details class="sdbr-auth" data-pop="7" data-az="христиан">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../g-h-andersen/" aria-label="Страница автора Г.Х. Андерсен"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg/330px-Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Г.Х. Андерсен <span class="sdbr-cnt">7</span></span></summary>
     <a class="sdbr-wrk" href="../g-h-andersen/snezhnaya-koroleva/">Снежная королева</a>
     <a class="sdbr-wrk" href="../g-h-andersen/rusalochka/">Русалочка</a>
     <a class="sdbr-wrk" href="../g-h-andersen/solovej-i-roza/">Соловей и роза</a>
@@ -37,19 +41,19 @@
     <a class="sdbr-wrk" href="../g-h-andersen/gadyuka/">Гадюка</a>
     <a class="sdbr-wrk" href="../g-h-andersen/novoe-plate-korolya/">Новое платье короля</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">О. Уайльд <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="оскар">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../o-uajld/" aria-label="Страница автора О. Уайльд"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Oscar_Wilde_portrait.jpg/330px-Oscar_Wilde_portrait.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">О. Уайльд <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../o-uajld/schastlivyj-princ/">Счастливый принц</a>
     <a class="sdbr-wrk" href="../o-uajld/solovej-i-roza/">Соловей и роза</a>
     <a class="sdbr-wrk" href="../o-uajld/hozyain-i-sluga/">Хозяин и слуга</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Г.В. Черноголовина <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="васильевна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../g-v-chernogolovina/" aria-label="Страница автора Г.В. Черноголовина"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0_%D0%93%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%BD%D0%B0.jpeg/250px-%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0_%D0%93%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%BD%D0%B0.jpeg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Г.В. Черноголовина <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../g-v-chernogolovina/skazka-ob-odnom-zernyshke/">Сказка об одном зернышке</a>
     <a class="sdbr-wrk" href="../g-v-chernogolovina/celinnaya-tema-v-rasskazah/">Целинная тема в рассказах</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">К.Г. Паустовский <span class="sdbr-cnt">6</span></span></summary>
+  <details class="sdbr-auth" data-pop="6" data-az="георгиевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../k-g-paustovskij/" aria-label="Страница автора К.Г. Паустовский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%9F%D0%B0%D1%83%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%281954%29.jpg/250px-%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%9F%D0%B0%D1%83%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%281954%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">К.Г. Паустовский <span class="sdbr-cnt">6</span></span></summary>
     <a class="sdbr-wrk" href="../k-g-paustovskij/teplyj-hleb/">Теплый хлеб</a>
     <a class="sdbr-wrk" href="../k-g-paustovskij/telegramma/">Телеграмма</a>
     <a class="sdbr-wrk" href="../k-g-paustovskij/volshebnoe-kolco/">Волшебное кольцо</a>
@@ -57,30 +61,30 @@
     <a class="sdbr-wrk" href="../k-g-paustovskij/kara-bugaz/">Кара-Бугаз</a>
     <a class="sdbr-wrk" href="../k-g-paustovskij/povest-o-lesah/">Повесть о лесах</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.М. Пришвин <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="михайлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-m-prishvin/" aria-label="Страница автора М.М. Пришвин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%9F%D1%80%D0%B8%D1%88%D0%B2%D0%B8%D0%BD_%281950%29.jpg/250px-%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%9F%D1%80%D0%B8%D1%88%D0%B2%D0%B8%D0%BD_%281950%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.М. Пришвин <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../m-m-prishvin/kladovaya-solnca/">Кладовая солнца</a>
     <a class="sdbr-wrk" href="../m-m-prishvin/volchata/">Волчата</a>
     <a class="sdbr-wrk" href="../m-m-prishvin/lesnaya-drama/">Лесная драма</a>
     <a class="sdbr-wrk" href="../m-m-prishvin/belyj-klyk/">Белый клык</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.М. Зощенко <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="михайлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-m-zoschenko/" aria-label="Страница автора М.М. Зощенко"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/1/18/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%97%D0%BE%D1%89%D0%B5%D0%BD%D0%BA%D0%BE.jpg/330px-%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%97%D0%BE%D1%89%D0%B5%D0%BD%D0%BA%D0%BE.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.М. Зощенко <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../m-m-zoschenko/obezyanij-yazyk/">Обезьяний язык</a>
     <a class="sdbr-wrk" href="../m-m-zoschenko/buhgalter/">Бухгалтер</a>
     <a class="sdbr-wrk" href="../m-m-zoschenko/ne-nado-vrat/">Не надо врать</a>
     <a class="sdbr-wrk" href="../m-m-zoschenko/yubilej-tolstogo/">Юбилей Толстого</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.И. Куприн <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-i-kuprin/" aria-label="Страница автора А.И. Куприн"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Alexander_Ivanovich_Kuprin_7.jpg/330px-Alexander_Ivanovich_Kuprin_7.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.И. Куприн <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../a-i-kuprin/olesya/">Олеся</a>
     <a class="sdbr-wrk" href="../a-i-kuprin/granatovyj-braslet/">Гранатовый браслет</a>
     <a class="sdbr-wrk" href="../a-i-kuprin/sinyaya-zvezda/">Синяя звезда</a>
     <a class="sdbr-wrk" href="../a-i-kuprin/poedinok/">Поединок</a>
     <a class="sdbr-wrk" href="../a-i-kuprin/melyuzga/">Мелюзга</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Л.Н. Толстой <span class="sdbr-cnt">12</span></span></summary>
+  <details class="sdbr-auth" data-pop="12" data-az="николаевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../l-n-tolstoj/" aria-label="Страница автора Л.Н. Толстой"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/L.N.Tolstoy_Prokudin-Gorsky_%28cropped%29.jpg/330px-L.N.Tolstoy_Prokudin-Gorsky_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Л.Н. Толстой <span class="sdbr-cnt">12</span></span></summary>
     <a class="sdbr-wrk" href="../l-n-tolstoj/kavkazskij-plennik/">Кавказский пленник</a>
     <a class="sdbr-wrk" href="../l-n-tolstoj/posle-bala/">После бала</a>
     <a class="sdbr-wrk" href="../l-n-tolstoj/detstvo/">Детство</a>
@@ -94,8 +98,8 @@
     <a class="sdbr-wrk" href="../l-n-tolstoj/albert/">Альберт</a>
     <a class="sdbr-wrk" href="../l-n-tolstoj/zhenevskaya-teoriya/">Женевская теория</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.П. Чехов <span class="sdbr-cnt">16</span></span></summary>
+  <details class="sdbr-auth" data-pop="16" data-az="павлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-p-chehov/" aria-label="Страница автора А.П. Чехов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%90._%D0%9F._%D0%A7%D0%B5%D1%85%D0%BE%D0%B2%2C_%D0%AF%D0%BB%D1%82%D0%B0.jpg/330px-%D0%90._%D0%9F._%D0%A7%D0%B5%D1%85%D0%BE%D0%B2%2C_%D0%AF%D0%BB%D1%82%D0%B0.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.П. Чехов <span class="sdbr-cnt">16</span></span></summary>
     <a class="sdbr-wrk" href="../a-p-chehov/kryzhovnik/">Крыжовник</a>
     <a class="sdbr-wrk" href="../a-p-chehov/toska/">Тоска</a>
     <a class="sdbr-wrk" href="../a-p-chehov/hameleon/">Хамелеон</a>
@@ -113,8 +117,8 @@
     <a class="sdbr-wrk" href="../a-p-chehov/medved/">Медведь</a>
     <a class="sdbr-wrk" href="../a-p-chehov/predlozhenie/">Предложение</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.В. Гоголь <span class="sdbr-cnt">13</span></span></summary>
+  <details class="sdbr-auth" data-pop="13" data-az="васильевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-v-gogol/" aria-label="Страница автора Н.В. Гоголь"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/N.Gogol_by_F.Moller_%281840%2C_Tretyakov_gallery%29.jpg/250px-N.Gogol_by_F.Moller_%281840%2C_Tretyakov_gallery%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.В. Гоголь <span class="sdbr-cnt">13</span></span></summary>
     <a class="sdbr-wrk" href="../n-v-gogol/noch-pered-rozhdestvom/">Ночь перед Рождеством</a>
     <a class="sdbr-wrk" href="../n-v-gogol/vechera-na-hutore-bliz-dikanki/">Вечера на хуторе близ Диканьки</a>
     <a class="sdbr-wrk" href="../n-v-gogol/mertvye-dushi/">Мертвые души</a>
@@ -129,8 +133,8 @@
     <a class="sdbr-wrk" href="../n-v-gogol/razbor-revizora-gogolya/">Разбор «Ревизора» Гоголя</a>
     <a class="sdbr-wrk" href="../n-v-gogol/neskolko-slov-o-pushkine/">Несколько слов о Пушкине</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">И.С. Тургенев <span class="sdbr-cnt">13</span></span></summary>
+  <details class="sdbr-auth" data-pop="13" data-az="сергеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../i-s-turgenev/" aria-label="Страница автора И.С. Тургенев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Turgenev_by_Repin.jpg/330px-Turgenev_by_Repin.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">И.С. Тургенев <span class="sdbr-cnt">13</span></span></summary>
     <a class="sdbr-wrk" href="../i-s-turgenev/mumu/">Муму</a>
     <a class="sdbr-wrk" href="../i-s-turgenev/bezhin-lug/">Бежин луг</a>
     <a class="sdbr-wrk" href="../i-s-turgenev/hor-i-kalinych/">Хорь и Калиныч</a>
@@ -145,8 +149,8 @@
     <a class="sdbr-wrk" href="../i-s-turgenev/lebedinaya-pesnya/">Лебединая песня</a>
     <a class="sdbr-wrk" href="../i-s-turgenev/postoyalyj-dvor/">Постоялый двор</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.Н. Островский <span class="sdbr-cnt">8</span></span></summary>
+  <details class="sdbr-auth" data-pop="8" data-az="николаевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-n-ostrovskij/" aria-label="Страница автора А.Н. Островский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Alexander_Ostrovsky_by_Vasily_Perov.jpg/330px-Alexander_Ostrovsky_by_Vasily_Perov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.Н. Островский <span class="sdbr-cnt">8</span></span></summary>
     <a class="sdbr-wrk" href="../a-n-ostrovskij/snegurochka/">Снегурочка</a>
     <a class="sdbr-wrk" href="../a-n-ostrovskij/bespridannica/">Бесприданница</a>
     <a class="sdbr-wrk" href="../a-n-ostrovskij/groza/">Гроза</a>
@@ -156,18 +160,18 @@
     <a class="sdbr-wrk" href="../a-n-ostrovskij/les/">Лес</a>
     <a class="sdbr-wrk" href="../a-n-ostrovskij/na-bojkom-meste/">На бойком месте</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Д.И. Фонвизин <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../d-i-fonvizin/" aria-label="Страница автора Д.И. Фонвизин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Armand-Charles_Caraffe%2C_Denis_Fonvizin%2C_c._1784%E2%80%931785%2C_Pushkin_House_%D0%96-95%3B_from_goskatalog.ru.jpg/330px-Armand-Charles_Caraffe%2C_Denis_Fonvizin%2C_c._1784%E2%80%931785%2C_Pushkin_House_%D0%96-95%3B_from_goskatalog.ru.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Д.И. Фонвизин <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../d-i-fonvizin/nedorosl/">Недоросль</a>
     <a class="sdbr-wrk" href="../d-i-fonvizin/yaschik/">Ящик</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.С. Грибоедова <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="сергеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-s-griboedova/" aria-label="Страница автора А.С. Грибоедова"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Alexander_Sergeyevich_Griboyedov%2C_1873.jpg/330px-Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Alexander_Sergeyevich_Griboyedov%2C_1873.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.С. Грибоедова <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../a-s-griboedova/gore-ot-uma/">Горе от ума</a>
     <a class="sdbr-wrk" href="../a-s-griboedova/milon-terzanij/">Мильон терзаний</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">И.А. Крылов <span class="sdbr-cnt">8</span></span></summary>
+  <details class="sdbr-auth" data-pop="8" data-az="андреевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../i-a-krylov/" aria-label="Страница автора И.А. Крылов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ivan_Krylov.jpg/330px-Ivan_Krylov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">И.А. Крылов <span class="sdbr-cnt">8</span></span></summary>
     <a class="sdbr-wrk" href="../i-a-krylov/volk-i-yagnenok/">Волк и Ягнёнок</a>
     <a class="sdbr-wrk" href="../i-a-krylov/lisica-i-vinograd/">Лисица и Виноград</a>
     <a class="sdbr-wrk" href="../i-a-krylov/martyshka-i-ochki/">Мартышка и Очки</a>
@@ -177,8 +181,8 @@
     <a class="sdbr-wrk" href="../i-a-krylov/vorona-i-lisica/">Ворона и Лисица</a>
     <a class="sdbr-wrk" href="../i-a-krylov/osel-i-solovej/">Осёл и Соловей</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.С. Пушкин <span class="sdbr-cnt">33</span></span></summary>
+  <details class="sdbr-auth" data-pop="33" data-az="сергеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-s-pushkin/" aria-label="Страница автора А.С. Пушкин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kiprensky_Pushkin.jpg/330px-Kiprensky_Pushkin.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.С. Пушкин <span class="sdbr-cnt">33</span></span></summary>
     <a class="sdbr-wrk" href="../a-s-pushkin/evgenij-onegin/">Евгений Онегин</a>
     <a class="sdbr-wrk" href="../a-s-pushkin/kapitanskaya-dochka/">Капитанская дочка</a>
     <a class="sdbr-wrk" href="../a-s-pushkin/pikovaya-dama/">Пиковая дама</a>
@@ -213,8 +217,8 @@
     <a class="sdbr-wrk" href="../a-s-pushkin/graf-nulin/">Граф Нулин</a>
     <a class="sdbr-wrk" href="../a-s-pushkin/poslanie-k-vyazemskomu/">Послание к Вяземскому</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.Ю. Лермонтов <span class="sdbr-cnt">22</span></span></summary>
+  <details class="sdbr-auth" data-pop="22" data-az="юрьевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-yu-lermontov/" aria-label="Страница автора М.Ю. Лермонтов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Mikhail_lermontov.jpg/330px-Mikhail_lermontov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.Ю. Лермонтов <span class="sdbr-cnt">22</span></span></summary>
     <a class="sdbr-wrk" href="../m-yu-lermontov/geroj-nashego-vremeni/">Герой нашего времени</a>
     <a class="sdbr-wrk" href="../m-yu-lermontov/mcyri/">Мцыри</a>
     <a class="sdbr-wrk" href="../m-yu-lermontov/demon/">Демон</a>
@@ -238,45 +242,45 @@
     <a class="sdbr-wrk" href="../m-yu-lermontov/molitva/">Молитва</a>
     <a class="sdbr-wrk" href="../m-yu-lermontov/gornye-vershiny/">Горные вершины</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.А. Жуковский <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="андреевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-a-zhukovskij/" aria-label="Страница автора В.А. Жуковский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Bryullov_portrait_of_Zhukovsky.jpg/330px-Bryullov_portrait_of_Zhukovsky.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.А. Жуковский <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../v-a-zhukovskij/lesnoj-car/">Лесной царь</a>
     <a class="sdbr-wrk" href="../v-a-zhukovskij/skazka-o-care-berendee/">Сказка о царе Берендее</a>
     <a class="sdbr-wrk" href="../v-a-zhukovskij/svetlana/">Светлана</a>
     <a class="sdbr-wrk" href="../v-a-zhukovskij/pesn-v-den-yubileya-krylova/">Песнь в день юбилея Крылова</a>
     <a class="sdbr-wrk" href="../v-a-zhukovskij/ispoved/">Исповедь</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В. Брюсов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="яковлевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-bryusov/" aria-label="Страница автора В. Брюсов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Valery_Bryusov_c._1900.jpg/250px-Valery_Bryusov_c._1900.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В. Брюсов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../v-bryusov/zavet-svyatoslava/">Завет Святослава</a>
     <a class="sdbr-wrk" href="../v-bryusov/opuski/">Опуски</a>
     <a class="sdbr-wrk" href="../v-bryusov/yunoshe/">Юноше</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">К.Д. Бальмонт <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="дмитриевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../k-d-balmont/" aria-label="Страница автора К.Д. Бальмонт"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Konstantin_Balmont_by_Valentin_Serov_1905.jpg/250px-Konstantin_Balmont_by_Valentin_Serov_1905.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">К.Д. Бальмонт <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../k-d-balmont/posvyaschenie/">Посвящение</a>
     <a class="sdbr-wrk" href="../k-d-balmont/fejnye-skazki/">Фейные сказки</a>
     <a class="sdbr-wrk" href="../k-d-balmont/volnyj-veter/">Вольный ветер</a>
     <a class="sdbr-wrk" href="../k-d-balmont/rusalka/">Русалка</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ф.И. Тютчев <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../f-i-tyutchev/" aria-label="Страница автора Ф.И. Тютчев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Fedor_Tutchev.jpg/330px-Fedor_Tutchev.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ф.И. Тютчев <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../f-i-tyutchev/ya-vstretil-vas-i-vse-bylo/">Я встретил вас — и всё было</a>
     <a class="sdbr-wrk" href="../f-i-tyutchev/vesennyaya-groza/">Весенняя гроза</a>
     <a class="sdbr-wrk" href="../f-i-tyutchev/listya/">Листья</a>
     <a class="sdbr-wrk" href="../f-i-tyutchev/kak-okean-obemlet/">Как океан объемлет</a>
     <a class="sdbr-wrk" href="../f-i-tyutchev/silentium/">Silentium!</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.А. Фет <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="афанасьевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-a-fet/" aria-label="Страница автора А.А. Фет"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Fet_by_Repin.jpg/330px-Fet_by_Repin.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.А. Фет <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../a-a-fet/esche-vesny-dushistoj-nega/">Ещё весны душистой нега</a>
     <a class="sdbr-wrk" href="../a-a-fet/step-vecherom/">Степь вечером</a>
     <a class="sdbr-wrk" href="../a-a-fet/shepot-robkoe-dyhane/">Шёпот, робкое дыханье</a>
     <a class="sdbr-wrk" href="../a-a-fet/zimnyaya-doroga/">Зимняя дорога</a>
     <a class="sdbr-wrk" href="../a-a-fet/kak-shumno-v-sadu/">Как шумно в саду</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.А. Некрасов <span class="sdbr-cnt">6</span></span></summary>
+  <details class="sdbr-auth" data-pop="6" data-az="алексеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-a-nekrasov/" aria-label="Страница автора Н.А. Некрасов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Nekrasov_by_Kramskoy.jpg/330px-Nekrasov_by_Kramskoy.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.А. Некрасов <span class="sdbr-cnt">6</span></span></summary>
     <a class="sdbr-wrk" href="../n-a-nekrasov/muzhichok-s-nogotok/">Мужичок с ноготок</a>
     <a class="sdbr-wrk" href="../n-a-nekrasov/krestyanskie-deti/">Крестьянские дети</a>
     <a class="sdbr-wrk" href="../n-a-nekrasov/russkie-zhenschiny/">Русские женщины</a>
@@ -284,15 +288,15 @@
     <a class="sdbr-wrk" href="../n-a-nekrasov/peterburgskie-sharmanschiki/">Петербургские шарманщики</a>
     <a class="sdbr-wrk" href="../n-a-nekrasov/o-filosofii/">О философии</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.Е. Салтыков-Щедрин <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="евграфович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-e-saltykov-schedrin/" aria-label="Страница автора М.Е. Салтыков-Щедрин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Kramskoj_-_saltykov-schedrin.jpg/330px-Kramskoj_-_saltykov-schedrin.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.Е. Салтыков-Щедрин <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../m-e-saltykov-schedrin/istoriya-odnogo-goroda/">История одного города</a>
     <a class="sdbr-wrk" href="../m-e-saltykov-schedrin/pompadury-i-pompadurshi/">Помпадуры и помпадурши</a>
     <a class="sdbr-wrk" href="../m-e-saltykov-schedrin/gospoda-golovlevy/">Господа Головлёвы</a>
     <a class="sdbr-wrk" href="../m-e-saltykov-schedrin/baba-ili-muzhik/">Баба или мужик</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.С. Лесков <span class="sdbr-cnt">6</span></span></summary>
+  <details class="sdbr-auth" data-pop="6" data-az="семёнович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-s-leskov/" aria-label="Страница автора Н.С. Лесков"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Serov_Leskov.jpg/330px-Serov_Leskov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.С. Лесков <span class="sdbr-cnt">6</span></span></summary>
     <a class="sdbr-wrk" href="../n-s-leskov/zhemchuzhnoe-ozherele/">Жемчужное ожерелье</a>
     <a class="sdbr-wrk" href="../n-s-leskov/levsha/">Левша</a>
     <a class="sdbr-wrk" href="../n-s-leskov/ocharovannyj-strannik/">Очарованный странник</a>
@@ -300,8 +304,8 @@
     <a class="sdbr-wrk" href="../n-s-leskov/odnodnevnyj-evrej/">Однодневный еврей</a>
     <a class="sdbr-wrk" href="../n-s-leskov/svyatochnye-rasskazy/">Святочные рассказы</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.Г. Короленко <span class="sdbr-cnt">8</span></span></summary>
+  <details class="sdbr-auth" data-pop="8" data-az="галактионович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-g-korolenko/" aria-label="Страница автора В.Г. Короленко"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Vladimir_Korolenko_bw.jpg/330px-Vladimir_Korolenko_bw.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.Г. Короленко <span class="sdbr-cnt">8</span></span></summary>
     <a class="sdbr-wrk" href="../v-g-korolenko/slepoj-muzykant/">Слепой музыкант</a>
     <a class="sdbr-wrk" href="../v-g-korolenko/v-durnom-obschestve/">В дурном обществе</a>
     <a class="sdbr-wrk" href="../v-g-korolenko/filishka/">Филишка</a>
@@ -311,15 +315,15 @@
     <a class="sdbr-wrk" href="../v-g-korolenko/svechka/">Свечка</a>
     <a class="sdbr-wrk" href="../v-g-korolenko/hodynka/">Ходынка</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">И.А. Гончаров <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../i-a-goncharov/" aria-label="Страница автора И.А. Гончаров"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Ivan_Aleksandrovich_Goncharov%2C_1874.jpg/250px-Ivan_Nikolayevich_Kramskoi_-_Portrait_of_Ivan_Aleksandrovich_Goncharov%2C_1874.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">И.А. Гончаров <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../i-a-goncharov/oblomov/">Обломов</a>
     <a class="sdbr-wrk" href="../i-a-goncharov/obyknovennaya-istoriya/">Обыкновенная история</a>
     <a class="sdbr-wrk" href="../i-a-goncharov/fregat-pallada/">Фрегат «Паллада»</a>
     <a class="sdbr-wrk" href="../i-a-goncharov/son-oblomova/">Сон Обломова</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ф.М. Достоевский <span class="sdbr-cnt">12</span></span></summary>
+  <details class="sdbr-auth" data-pop="12" data-az="михайлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../f-m-dostoevskij/" aria-label="Страница автора Ф.М. Достоевский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/330px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ф.М. Достоевский <span class="sdbr-cnt">12</span></span></summary>
     <a class="sdbr-wrk" href="../f-m-dostoevskij/prestuplenie-i-nakazanie/">Преступление и наказание</a>
     <a class="sdbr-wrk" href="../f-m-dostoevskij/idiot/">Идиот</a>
     <a class="sdbr-wrk" href="../f-m-dostoevskij/besy/">Бесы</a>
@@ -333,8 +337,8 @@
     <a class="sdbr-wrk" href="../f-m-dostoevskij/zapiski-iz-mertvogo-doma/">Записки из Мертвого дома</a>
     <a class="sdbr-wrk" href="../f-m-dostoevskij/unizhennye-i-oskorblennye/">Униженные и оскорбленные</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.М. Горький <span class="sdbr-cnt">11</span></span></summary>
+  <details class="sdbr-auth" data-pop="11" data-az="максим">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-m-gorkij/" aria-label="Страница автора А.М. Горький"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Maxim_Gorky_1927_%28cropped%29.png/330px-Maxim_Gorky_1927_%28cropped%29.png?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.М. Горький <span class="sdbr-cnt">11</span></span></summary>
     <a class="sdbr-wrk" href="../a-m-gorkij/mat/">Мать</a>
     <a class="sdbr-wrk" href="../a-m-gorkij/detstvo/">Детство</a>
     <a class="sdbr-wrk" href="../a-m-gorkij/v-lyudyah/">В людях</a>
@@ -347,15 +351,15 @@
     <a class="sdbr-wrk" href="../a-m-gorkij/nesvoevremennye-mysli/">Несвоевременные мысли</a>
     <a class="sdbr-wrk" href="../a-m-gorkij/legenda-o-danko/">Легенда о Данко</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">И.А. Бунин <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="алексеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../i-a-bunin/" aria-label="Страница автора И.А. Бунин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/%D0%98%D0%B2%D0%B0%D0%BD_%D0%91%D1%83%D0%BD%D0%B8%D0%BD_%281928%29.jpg/250px-%D0%98%D0%B2%D0%B0%D0%BD_%D0%91%D1%83%D0%BD%D0%B8%D0%BD_%281928%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">И.А. Бунин <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../i-a-bunin/gospodin-iz-san-francisko/">Господин из Сан-Франциско</a>
     <a class="sdbr-wrk" href="../i-a-bunin/temnye-allei/">Тёмные аллеи</a>
     <a class="sdbr-wrk" href="../i-a-bunin/grammatika-lyubvi/">Грамматика любви</a>
     <a class="sdbr-wrk" href="../i-a-bunin/chistyj-ponedelnik/">Чистый понедельник</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.В. Маяковский <span class="sdbr-cnt">7</span></span></summary>
+  <details class="sdbr-auth" data-pop="7" data-az="владимирович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-v-mayakovskij/" aria-label="Страница автора В.В. Маяковский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9C%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_1930.jpg/250px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9C%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_1930.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.В. Маяковский <span class="sdbr-cnt">7</span></span></summary>
     <a class="sdbr-wrk" href="../v-v-mayakovskij/oblako-v-shtanah/">Облако в штанах</a>
     <a class="sdbr-wrk" href="../v-v-mayakovskij/lilichka/">Лиличка!</a>
     <a class="sdbr-wrk" href="../v-v-mayakovskij/poslushajte/">Послушайте!</a>
@@ -364,8 +368,8 @@
     <a class="sdbr-wrk" href="../v-v-mayakovskij/vo-ves-golos/">Во весь голос</a>
     <a class="sdbr-wrk" href="../v-v-mayakovskij/pro-eto/">Про это</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">С.А. Есенин <span class="sdbr-cnt">15</span></span></summary>
+  <details class="sdbr-auth" data-pop="15" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../s-a-esenin/" aria-label="Страница автора С.А. Есенин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Sergey_Yesenin_2.jpg/250px-Sergey_Yesenin_2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">С.А. Есенин <span class="sdbr-cnt">15</span></span></summary>
     <a class="sdbr-wrk" href="../s-a-esenin/pismo-k-zhenschine/">Письмо к женщине</a>
     <a class="sdbr-wrk" href="../s-a-esenin/moskva-kabackaya/">Москва кабацкая</a>
     <a class="sdbr-wrk" href="../s-a-esenin/belaya-staya/">Белая стая</a>
@@ -382,8 +386,8 @@
     <a class="sdbr-wrk" href="../s-a-esenin/pushkinu/">Пушкину</a>
     <a class="sdbr-wrk" href="../s-a-esenin/soroka-vorona/">Сорока-ворона</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.А. Ахматова <span class="sdbr-cnt">8</span></span></summary>
+  <details class="sdbr-auth" data-pop="8" data-az="андреевна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-a-ahmatova/" aria-label="Страница автора А.А. Ахматова"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0_%28cropped%29.png/330px-%D0%90%D0%BD%D0%BD%D0%B0_%D0%90%D1%85%D0%BC%D0%B0%D1%82%D0%BE%D0%B2%D0%B0_%28cropped%29.png?utm_source=ru.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.А. Ахматова <span class="sdbr-cnt">8</span></span></summary>
     <a class="sdbr-wrk" href="../a-a-ahmatova/rekviem/">Реквием</a>
     <a class="sdbr-wrk" href="../a-a-ahmatova/muzhestvo/">Мужество</a>
     <a class="sdbr-wrk" href="../a-a-ahmatova/szhala-ruki-pod-temnoj-vualyu/">Сжала руки под темной вуалью</a>
@@ -393,24 +397,24 @@
     <a class="sdbr-wrk" href="../a-a-ahmatova/poema-bez-geroya/">Поэма без героя</a>
     <a class="sdbr-wrk" href="../a-a-ahmatova/vecher/">Вечер</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">О.Э. Мандельштам <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="эмильевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../o-e-mandelshtam/" aria-label="Страница автора О.Э. Мандельштам"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Mandelshtam17.jpg/330px-Mandelshtam17.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">О.Э. Мандельштам <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../o-e-mandelshtam/vek/">Век</a>
     <a class="sdbr-wrk" href="../o-e-mandelshtam/ierihonskij-rog/">Иерихонский рог</a>
     <a class="sdbr-wrk" href="../o-e-mandelshtam/nevozvratimost-podsteregaet/">Невозвратимость подстерегает</a>
     <a class="sdbr-wrk" href="../o-e-mandelshtam/ne-lyublyu-roskoshnogo-prirody-upadka/">Не люблю роскошного природы упадка</a>
     <a class="sdbr-wrk" href="../o-e-mandelshtam/my-zhili-ne-vedaya-schastiya/">Мы жили, не ведая счастия</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.И. Цветаева <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="ивановна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-i-cvetaeva/" aria-label="Страница автора М.И. Цветаева"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%B0%D0%B5%D0%B2%D0%B0_%281925%29_%28cropped%29.jpg/250px-%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0_%D0%A6%D0%B2%D0%B5%D1%82%D0%B0%D0%B5%D0%B2%D0%B0_%281925%29_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.И. Цветаева <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../m-i-cvetaeva/uzh-dve-nedeli-kak-skuchu/">Уж две недели, как скучу</a>
     <a class="sdbr-wrk" href="../m-i-cvetaeva/moj-put/">Мой путь</a>
     <a class="sdbr-wrk" href="../m-i-cvetaeva/uroki-muzyki/">Уроки музыки</a>
     <a class="sdbr-wrk" href="../m-i-cvetaeva/sny/">Сны</a>
     <a class="sdbr-wrk" href="../m-i-cvetaeva/krysolov/">Крысолов</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.А. Блок <span class="sdbr-cnt">8</span></span></summary>
+  <details class="sdbr-auth" data-pop="8" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-a-blok/" aria-label="Страница автора А.А. Блок"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Alexander_Blok.jpeg/330px-Alexander_Blok.jpeg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.А. Блок <span class="sdbr-cnt">8</span></span></summary>
     <a class="sdbr-wrk" href="../a-a-blok/neznakomka/">Незнакомка</a>
     <a class="sdbr-wrk" href="../a-a-blok/dvenadcat/">Двенадцать</a>
     <a class="sdbr-wrk" href="../a-a-blok/vozmezdie/">Возмездие</a>
@@ -420,8 +424,8 @@
     <a class="sdbr-wrk" href="../a-a-blok/rossiya/">Россия</a>
     <a class="sdbr-wrk" href="../a-a-blok/stihi-o-prekrasnoj-dame/">Стихи о Прекрасной Даме</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Б.Л. Пастернак <span class="sdbr-cnt">7</span></span></summary>
+  <details class="sdbr-auth" data-pop="7" data-az="леонидович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../b-l-pasternak/" aria-label="Страница автора Б.Л. Пастернак"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Boris_Pasternak_1958_photo.jpg/250px-Boris_Pasternak_1958_photo.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Б.Л. Пастернак <span class="sdbr-cnt">7</span></span></summary>
     <a class="sdbr-wrk" href="../b-l-pasternak/doktor-zhivago/">Доктор Живаго</a>
     <a class="sdbr-wrk" href="../b-l-pasternak/rozhdestvenskaya-zvezda/">Рождественская звезда</a>
     <a class="sdbr-wrk" href="../b-l-pasternak/opredelenie-poezii/">Определение поэзии</a>
@@ -430,8 +434,8 @@
     <a class="sdbr-wrk" href="../b-l-pasternak/fevral/">Февраль</a>
     <a class="sdbr-wrk" href="../b-l-pasternak/voskresenie/">Воскресение</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.Т. Твардовский <span class="sdbr-cnt">6</span></span></summary>
+  <details class="sdbr-auth" data-pop="6" data-az="трифонович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-t-tvardovskij/" aria-label="Страница автора А.Т. Твардовский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%A2%D0%B2%D0%B0%D1%80%D0%B4%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%281947%29.jpg/250px-%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%A2%D0%B2%D0%B0%D1%80%D0%B4%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%281947%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.Т. Твардовский <span class="sdbr-cnt">6</span></span></summary>
     <a class="sdbr-wrk" href="../a-t-tvardovskij/vasilij-terkin/">Василий Теркин</a>
     <a class="sdbr-wrk" href="../a-t-tvardovskij/za-dalyu-dal/">За далью — даль</a>
     <a class="sdbr-wrk" href="../a-t-tvardovskij/terkin-v-zagrobnom-mire/">Тёркин в загробном мире</a>
@@ -439,15 +443,15 @@
     <a class="sdbr-wrk" href="../a-t-tvardovskij/ya-ubit-podo-rzhevom/">Я убит подо Ржевом</a>
     <a class="sdbr-wrk" href="../a-t-tvardovskij/my-za-cenoj-ne-postoim/">Мы за ценой не постоим</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">К.М. Симонов <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="михайлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../k-m-simonov/" aria-label="Страница автора К.М. Симонов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%A1%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2.jpg/330px-%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%A1%D0%B8%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">К.М. Симонов <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../k-m-simonov/zhdi-menya/">Жди меня</a>
     <a class="sdbr-wrk" href="../k-m-simonov/ty-pomnish-alesha-dorogi-smolenschiny/">Ты помнишь, Алёша, дороги Смоленщины</a>
     <a class="sdbr-wrk" href="../k-m-simonov/u-vojny-ne-zhenskoe-lico/">У войны не женское лицо</a>
     <a class="sdbr-wrk" href="../k-m-simonov/syplet-cheremuha-snegom/">Сыплет черёмуха снегом</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.А. Шолохов <span class="sdbr-cnt">7</span></span></summary>
+  <details class="sdbr-auth" data-pop="7" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-a-sholohov/" aria-label="Страница автора М.А. Шолохов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Mikhail_Sholokhov_1960.jpg/330px-Mikhail_Sholokhov_1960.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.А. Шолохов <span class="sdbr-cnt">7</span></span></summary>
     <a class="sdbr-wrk" href="../m-a-sholohov/tihij-don/">Тихий Дон</a>
     <a class="sdbr-wrk" href="../m-a-sholohov/podnyataya-celina/">Поднятая целина</a>
     <a class="sdbr-wrk" href="../m-a-sholohov/sudba-cheloveka/">Судьба человека</a>
@@ -456,196 +460,196 @@
     <a class="sdbr-wrk" href="../m-a-sholohov/prodkomissar/">Продкомиссар</a>
     <a class="sdbr-wrk" href="../m-a-sholohov/lazorevaya-step/">Лазоревая степь</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.А. Булгаков <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="афанасьевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-a-bulgakov/" aria-label="Страница автора М.А. Булгаков"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%91%D1%83%D0%BB%D0%B3%D0%B0%D0%BA%D0%BE%D0%B2.jpg/330px-%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB-%D0%91%D1%83%D0%BB%D0%B3%D0%B0%D0%BA%D0%BE%D0%B2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.А. Булгаков <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../m-a-bulgakov/master-i-margarita/">Мастер и Маргарита</a>
     <a class="sdbr-wrk" href="../m-a-bulgakov/sobache-serdce/">Собачье сердце</a>
     <a class="sdbr-wrk" href="../m-a-bulgakov/belaya-gvardiya/">Белая гвардия</a>
     <a class="sdbr-wrk" href="../m-a-bulgakov/zapiski-yunogo-vracha/">Записки юного врача</a>
     <a class="sdbr-wrk" href="../m-a-bulgakov/teatralnyj-roman/">Театральный роман</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.П. Платонов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="платонович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-p-platonov/" aria-label="Страница автора А.П. Платонов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Andrei_Platonov_1973.png/330px-Andrei_Platonov_1973.png?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.П. Платонов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../a-p-platonov/kotlovan/">Котлован</a>
     <a class="sdbr-wrk" href="../a-p-platonov/chevengur/">Чевенгур</a>
     <a class="sdbr-wrk" href="../a-p-platonov/vozvraschenie-domoj/">Возвращение домой</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ф.А. Искандер <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="абидович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../f-a-iskander/" aria-label="Страница автора Ф.А. Искандер"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/%D0%A4%D0%B0%D0%B7%D0%B8%D0%BB%D1%8C_%D0%98%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B5%D1%80._%D0%A4%D0%BE%D1%82%D0%BE_%D0%90%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D1%81%D0%B8%D0%B8_%D0%A4%D0%B5%D0%B4%D0%BE%D1%80%D0%B5%D0%BD%D0%BA%D0%BE.jpg/330px-%D0%A4%D0%B0%D0%B7%D0%B8%D0%BB%D1%8C_%D0%98%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B5%D1%80._%D0%A4%D0%BE%D1%82%D0%BE_%D0%90%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D1%81%D0%B8%D0%B8_%D0%A4%D0%B5%D0%B4%D0%BE%D1%80%D0%B5%D0%BD%D0%BA%D0%BE.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ф.А. Искандер <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../f-a-iskander/sandro-iz-chegema/">Сандро из Чегема</a>
     <a class="sdbr-wrk" href="../f-a-iskander/kroliky-i-udavy/">Кроликы и удавы</a>
     <a class="sdbr-wrk" href="../f-a-iskander/kak-stanovyatsya-muzhchinoj/">Как становятся мужчиной</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ч.Т. Айтматов <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="торекулович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../ch-t-ajtmatov/" aria-label="Страница автора Ч.Т. Айтматов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/%D0%A7%D0%B8%D0%BD%D0%B3%D0%B8%D0%B7_%D0%90%D0%B9%D1%82%D0%BC%D0%B0%D1%82%D0%BE%D0%B2_%28cropped%29.JPG/250px-%D0%A7%D0%B8%D0%BD%D0%B3%D0%B8%D0%B7_%D0%90%D0%B9%D1%82%D0%BC%D0%B0%D1%82%D0%BE%D0%B2_%28cropped%29.JPG?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ч.Т. Айтматов <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../ch-t-ajtmatov/pervyj-uchitel/">Первый учитель</a>
     <a class="sdbr-wrk" href="../ch-t-ajtmatov/plaha/">Плаха</a>
     <a class="sdbr-wrk" href="../ch-t-ajtmatov/burannyj-polustanok/">Буранный полустанок</a>
     <a class="sdbr-wrk" href="../ch-t-ajtmatov/topol-koksaj/">Тополь Коксай</a>
     <a class="sdbr-wrk" href="../ch-t-ajtmatov/dzhamilya/">Джамиля</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.В. Вампилов <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="васильевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-v-vampilov/" aria-label="Страница автора А.В. Вампилов"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/ru/6/6c/Vampilov%2C_Aleksandr_Valentinovich.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.В. Вампилов <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../a-v-vampilov/utinaya-ohota/">Утиная охота</a>
     <a class="sdbr-wrk" href="../a-v-vampilov/starshij-syn/">Старший сын</a>
     <a class="sdbr-wrk" href="../a-v-vampilov/proshlym-letom-v-chulymske/">Прошлым летом в Чулымске</a>
     <a class="sdbr-wrk" href="../a-v-vampilov/svidanie-v-maleevke/">Свидание в Малеевке</a>
     <a class="sdbr-wrk" href="../a-v-vampilov/dvushka/">Двушка</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.Г. Распутин <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="григорьевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-g-rasputin/" aria-label="Страница автора В.Г. Распутин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/%D0%92%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%B8%D0%BD_%D0%A0%D0%B0%D1%81%D0%BF%D1%83%D1%82%D0%B8%D0%BD.jpg/330px-%D0%92%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%B8%D0%BD_%D0%A0%D0%B0%D1%81%D0%BF%D1%83%D1%82%D0%B8%D0%BD.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.Г. Распутин <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../v-g-rasputin/proschanie-s-materoj/">Прощание с Матёрой</a>
     <a class="sdbr-wrk" href="../v-g-rasputin/poslednij-poklon/">Последний поклон</a>
     <a class="sdbr-wrk" href="../v-g-rasputin/dengi-dlya-marii/">Деньги для Марии</a>
     <a class="sdbr-wrk" href="../v-g-rasputin/uroki-francuzskogo/">Уроки французского</a>
     <a class="sdbr-wrk" href="../v-g-rasputin/zhivi-i-pomni/">Живи и помни</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.П. Астафьев <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="петрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-p-astafev/" aria-label="Страница автора В.П. Астафьев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/d/d5/%D0%9F%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%90%D1%81%D1%82%D0%B0%D1%84%D1%8C%D0%B5%D0%B2.jpg/330px-%D0%9F%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%90%D1%81%D1%82%D0%B0%D1%84%D1%8C%D0%B5%D0%B2.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.П. Астафьев <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../v-p-astafev/kon-s-rozovoj-grivoj/">Конь с розовой гривой</a>
     <a class="sdbr-wrk" href="../v-p-astafev/pechnik/">Печник</a>
     <a class="sdbr-wrk" href="../v-p-astafev/zvonite-doktor-medvedev/">Звоните, доктор Медведев!</a>
     <a class="sdbr-wrk" href="../v-p-astafev/proklyaty-i-ubity/">Прокляты и убиты</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Е.И. Носов <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../e-i-nosov/" aria-label="Страница автора Е.И. Носов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/RUSMARKA-3420.jpg/250px-RUSMARKA-3420.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Е.И. Носов <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../e-i-nosov/ulitka-pod-rukoj/">Улитка под рукой</a>
     <a class="sdbr-wrk" href="../e-i-nosov/bez-ruzhya/">Без ружья</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.Ю. Драгунский <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="юзефович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-yu-dragunskij/" aria-label="Страница автора В.Ю. Драгунский"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Viktor_Dragunsky_1947.JPG?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.Ю. Драгунский <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../v-yu-dragunskij/deniskiny-rasskazy/">Денискины рассказы</a>
     <a class="sdbr-wrk" href="../v-yu-dragunskij/gde-eto-vidano-gde-slyshano/">Где это видано, где слышано</a>
     <a class="sdbr-wrk" href="../v-yu-dragunskij/golubaya-chalma/">Голубая чалма</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">К.И. Чуковский <span class="sdbr-cnt">5</span></span></summary>
+  <details class="sdbr-auth" data-pop="5" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../k-i-chukovskij/" aria-label="Страница автора К.И. Чуковский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Chukovsky_1958_02_%28cropped%29.jpg/250px-Chukovsky_1958_02_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">К.И. Чуковский <span class="sdbr-cnt">5</span></span></summary>
     <a class="sdbr-wrk" href="../k-i-chukovskij/mojdodyr/">Мойдодыр</a>
     <a class="sdbr-wrk" href="../k-i-chukovskij/fedorino-gore/">Федорино горе</a>
     <a class="sdbr-wrk" href="../k-i-chukovskij/tarakanische/">Тараканище</a>
     <a class="sdbr-wrk" href="../k-i-chukovskij/muha-cokotuha/">Муха-Цокотуха</a>
     <a class="sdbr-wrk" href="../k-i-chukovskij/deti-v-kletke/">Дети в клетке</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">С.Я. Маршак <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="яковлевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../s-ya-marshak/" aria-label="Страница автора С.Я. Маршак"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Samuil_Marshak_by_Sergei_Strunnikov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">С.Я. Маршак <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../s-ya-marshak/deti-v-kletke/">Дети в клетке</a>
     <a class="sdbr-wrk" href="../s-ya-marshak/vse-moi-vnuki/">Все мои внуки</a>
     <a class="sdbr-wrk" href="../s-ya-marshak/razgovor-s-malchishkoj/">Разговор с мальчишкой</a>
     <a class="sdbr-wrk" href="../s-ya-marshak/mister-tvister/">Мистер Твистер</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">С.В. Михалков <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="владимирович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../s-v-mihalkov/" aria-label="Страница автора С.В. Михалков"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%BA%D0%BE%D0%B2_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg/250px-%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%BA%D0%BE%D0%B2_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">С.В. Михалков <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../s-v-mihalkov/dyadya-stepa/">Дядя Стёпа</a>
     <a class="sdbr-wrk" href="../s-v-mihalkov/schenok/">Щенок</a>
     <a class="sdbr-wrk" href="../s-v-mihalkov/chastushki/">Частушки</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">О.О. Сулейменов <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="омарович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../o-o-sulejmenov/" aria-label="Страница автора О.О. Сулейменов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Oljas_Suleymenov.jpg/330px-Oljas_Suleymenov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">О.О. Сулейменов <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../o-o-sulejmenov/zemlya-poklonis-cheloveku/">Земля, поклонись человеку!</a>
     <a class="sdbr-wrk" href="../o-o-sulejmenov/licom-k-licu/">Лицом к лицу</a>
     <a class="sdbr-wrk" href="../o-o-sulejmenov/ya-slyshu-kazahstan-tebya/">Я слышу, Казахстан, тебя!</a>
     <a class="sdbr-wrk" href="../o-o-sulejmenov/golos-pamyati/">Голос памяти</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Абай Кунанбаев <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="ибрагим">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../abaj-kunanbaev/" aria-label="Страница автора Абай Кунанбаев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Abai_Kunanbaev.jpg/330px-Abai_Kunanbaev.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Абай Кунанбаев <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../abaj-kunanbaev/slovo-nazidaniya/">Слово назидания</a>
     <a class="sdbr-wrk" href="../abaj-kunanbaev/bez-bileta/">Без билета</a>
     <a class="sdbr-wrk" href="../abaj-kunanbaev/mysl/">Мысль</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М.Ш. Ауэзов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="шаханович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-sh-auezov/" aria-label="Страница автора М.Ш. Ауэзов"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Auezov_Mukhtar.jpg/330px-Auezov_Mukhtar.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М.Ш. Ауэзов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../m-sh-auezov/put-abaya/">Путь Абая</a>
     <a class="sdbr-wrk" href="../m-sh-auezov/abaj/">Абай</a>
     <a class="sdbr-wrk" href="../m-sh-auezov/konokrady/">Конокрады</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А. Нурпаисов <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="абдижамил">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-nurpaisov/" aria-label="Страница автора А. Нурпаисов"><span class="sdbr-av sdbr-av--ph" aria-hidden="true">А</span></a><span class="sdbr-auth-lnk">А. Нурпаисов <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../a-nurpaisov/krasnoarmejskaya-vetka/">Красноармейская ветка</a>
     <a class="sdbr-wrk" href="../a-nurpaisov/beloe-oblako-chingishana/">Белое облако Чингисхана</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.М. Щербанов <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="михайлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-m-scherbanov/" aria-label="Страница автора Н.М. Щербанов"><span class="sdbr-av sdbr-av--ph" aria-hidden="true">Н</span></a><span class="sdbr-auth-lnk">Н.М. Щербанов <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../n-m-scherbanov/poehal-ya-v-uralsk/">Поехал я в Уральск</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Р. Гамзатов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="гамзатович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../r-gamzatov/" aria-label="Страница автора Р. Гамзатов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Rasul_Gamzatov_picture_from_1952_magazine.jpg/330px-Rasul_Gamzatov_picture_from_1952_magazine.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Р. Гамзатов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../r-gamzatov/babij-yar/">Бабий Яр</a>
     <a class="sdbr-wrk" href="../r-gamzatov/zhuravli/">Журавли</a>
     <a class="sdbr-wrk" href="../r-gamzatov/moj-dagestan/">Мой Дагестан</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М. Джалиль <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="муса">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-dzhalil/" aria-label="Страница автора М. Джалиль"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/1959_CPA_2334.jpg/250px-1959_CPA_2334.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М. Джалиль <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../m-dzhalil/moi-zemlyaki/">Мои земляки</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.А. Фадеев <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-a-fadeev/" aria-label="Страница автора А.А. Фадеев"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Fotothek_df_roe-neg_0006329_003_Mitglied_%281%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.А. Фадеев <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../a-a-fadeev/molodaya-gvardiya/">Молодая гвардия</a>
     <a class="sdbr-wrk" href="../a-a-fadeev/razgrom/">Разгром</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.А. Островский <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="алексеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-a-ostrovskij/" aria-label="Страница автора Н.А. Островский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/N_Ostrovskiy.jpg/330px-N_Ostrovskiy.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.А. Островский <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../n-a-ostrovskij/kak-zakalyalas-stal/">Как закалялась сталь</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.П. Катаев <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="петрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-p-kataev/" aria-label="Страница автора В.П. Катаев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Valentin_Kataev.jpg/330px-Valentin_Kataev.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.П. Катаев <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../v-p-kataev/razbitaya-zhizn/">Разбитая жизнь</a>
     <a class="sdbr-wrk" href="../v-p-kataev/svetlyj-bereg/">Светлый берег</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.А. Каверин <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-a-kaverin/" aria-label="Страница автора В.А. Каверин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Kaverin_1970_3x4_portrait.jpg/330px-Kaverin_1970_3x4_portrait.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.А. Каверин <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../v-a-kaverin/dva-kapitana/">Два капитана</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Л.А. Пантелеев <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../l-a-panteleev/" aria-label="Страница автора Л.А. Пантелеев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Leonid_Pantelejew.jpg/500px-Leonid_Pantelejew.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Л.А. Пантелеев <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../l-a-panteleev/respublika-shkid/">Республика Шкид</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Л.Г. Белых <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="герасимович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../l-g-belyh/" aria-label="Страница автора Л.Г. Белых"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/e/ec/Loits_lg.jpg/250px-Loits_lg.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Л.Г. Белых <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../l-g-belyh/respublika-shkid/">Республика Шкид</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ю.М. Нагибин <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="маркович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../yu-m-nagibin/" aria-label="Страница автора Ю.М. Нагибин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Yuri_Nagibin_%28cropped%29.jpg/250px-Yuri_Nagibin_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ю.М. Нагибин <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../yu-m-nagibin/zametki-yunogo-kritika/">Заметки юного критика</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.Ф. Тендряков <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="фёдорович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-f-tendryakov/" aria-label="Страница автора В.Ф. Тендряков"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/3/31/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%A4%D1%91%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%D0%A2%D0%B5%D0%BD%D0%B4%D1%80%D1%8F%D0%BA%D0%BE%D0%B2.jpg/250px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%A4%D1%91%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%D0%A2%D0%B5%D0%BD%D0%B4%D1%80%D1%8F%D0%BA%D0%BE%D0%B2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.Ф. Тендряков <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../v-f-tendryakov/hleb-dlya-sobaki/">Хлеб для собаки</a>
     <a class="sdbr-wrk" href="../v-f-tendryakov/uroki-francuzskogo/">Уроки французского</a>
     <a class="sdbr-wrk" href="../v-f-tendryakov/neudachnik/">Неудачник</a>
     <a class="sdbr-wrk" href="../v-f-tendryakov/vesennyaya-voda/">Весенняя вода</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ю.В. Трифонов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="валентинович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../yu-v-trifonov/" aria-label="Страница автора Ю.В. Трифонов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/%D0%AE%D1%80%D0%B8%D0%B9_%D0%A2%D1%80%D0%B8%D1%84%D0%BE%D0%BD%D0%BE%D0%B2_%28cropped%29.jpg/250px-%D0%AE%D1%80%D0%B8%D0%B9_%D0%A2%D1%80%D0%B8%D1%84%D0%BE%D0%BD%D0%BE%D0%B2_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ю.В. Трифонов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../yu-v-trifonov/dom-na-naberezhnoj/">Дом на набережной</a>
     <a class="sdbr-wrk" href="../yu-v-trifonov/drugaya-zhizn/">Другая жизнь</a>
     <a class="sdbr-wrk" href="../yu-v-trifonov/igra/">Игра</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.С. Гроссман <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="семёнович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-s-grossman/" aria-label="Страница автора В.С. Гроссман"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/7/79/%D0%93%D1%80%D0%BE%D1%81%D1%81%D0%BC%D0%B0%D0%BD%2C_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B9_%D0%A1%D0%B5%D0%BC%D1%91%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg/250px-%D0%93%D1%80%D0%BE%D1%81%D1%81%D0%BC%D0%B0%D0%BD%2C_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B9_%D0%A1%D0%B5%D0%BC%D1%91%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.С. Гроссман <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../v-s-grossman/zhizn-i-sudba/">Жизнь и судьба</a>
     <a class="sdbr-wrk" href="../v-s-grossman/vse-techet/">Все течет</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.И. Солженицын <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="исаевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-i-solzhenicyn/" aria-label="Страница автора А.И. Солженицын"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Aleksandr_Solzhenitsyn_1974.jpg/250px-Aleksandr_Solzhenitsyn_1974.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.И. Солженицын <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../a-i-solzhenicyn/odin-den-ivana-denisovicha/">Один день Ивана Денисовича</a>
     <a class="sdbr-wrk" href="../a-i-solzhenicyn/arhipelag-gulag/">Архипелаг ГУЛАГ</a>
     <a class="sdbr-wrk" href="../a-i-solzhenicyn/matrenin-dvor/">Матрёнин двор</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Д.А. Гранин <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../d-a-granin/" aria-label="Страница автора Д.А. Гранин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Granin_Danil_001.JPG/250px-Granin_Danil_001.JPG?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Д.А. Гранин <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../d-a-granin/zubr/">Зубр</a>
     <a class="sdbr-wrk" href="../d-a-granin/eta-strannaya-zhizn/">Эта странная жизнь</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.В. Дудинцев <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="васильевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-v-dudincev/" aria-label="Страница автора В.В. Дудинцев"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/3/30/Dudincev.jpg/250px-Dudincev.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.В. Дудинцев <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../v-v-dudincev/ne-hlebom-edinym/">Не хлебом единым</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">О. Хайям <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="омар">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../o-hajyam/" aria-label="Страница автора О. Хайям"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Omar_Khayyam2.JPG/330px-Omar_Khayyam2.JPG?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">О. Хайям <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../o-hajyam/rubai/">Рубаи</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">У. Шекспир <span class="sdbr-cnt">6</span></span></summary>
+  <details class="sdbr-auth" data-pop="6" data-az="уильям">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../u-shekspir/" aria-label="Страница автора У. Шекспир"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Hw-shakespeare.png/330px-Hw-shakespeare.png?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">У. Шекспир <span class="sdbr-cnt">6</span></span></summary>
     <a class="sdbr-wrk" href="../u-shekspir/romeo-i-dzhuletta/">Ромео и Джульетта</a>
     <a class="sdbr-wrk" href="../u-shekspir/gamlet/">Гамлет</a>
     <a class="sdbr-wrk" href="../u-shekspir/makbet/">Макбет</a>
@@ -653,267 +657,267 @@
     <a class="sdbr-wrk" href="../u-shekspir/korol-lir/">Король Лир</a>
     <a class="sdbr-wrk" href="../u-shekspir/son-v-letnyuyu-noch/">Сон в летнюю ночь</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М. Сервантес <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="де">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-servantes/" aria-label="Страница автора М. Сервантес"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/330px-Cervantes_J%C3%A1uregui.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М. Сервантес <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../m-servantes/don-kihot/">Дон Кихот</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В. Скотт <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="вальтер">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-skott/" aria-label="Страница автора В. Скотт"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Sir_Walter_Scott_-_Raeburn-2.jpg/330px-Sir_Walter_Scott_-_Raeburn-2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В. Скотт <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../v-skott/ajvengo/">Айвенго</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Г.А. Бюргер <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="аугуст">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../g-a-byurger/" aria-label="Страница автора Г.А. Бюргер"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/G_a_buerger_sw.jpeg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Г.А. Бюргер <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../g-a-byurger/lenora/">Ленора</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Э.Т.А. Гофман <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="амадей">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../e-t-a-gofman/" aria-label="Страница автора Э.Т.А. Гофман"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/E._T._A._Hoffmann%2C_autorretrato.jpg/330px-E._T._A._Hoffmann%2C_autorretrato.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Э.Т.А. Гофман <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../e-t-a-gofman/schelkunchik-i-myshinyj-korol/">Щелкунчик и Мышиный король</a>
     <a class="sdbr-wrk" href="../e-t-a-gofman/zolotoj-gorshok/">Золотой горшок</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Данте <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="алигьери">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dante/" aria-label="Страница автора Данте"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_de_Dante.jpg/330px-Portrait_de_Dante.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Данте <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../dante/bozhestvennaya-komediya/">Божественная комедия</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Гомер <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="гомер">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../gomer/" aria-label="Страница автора Гомер"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Homeros_MFA_Munich_51.jpg/330px-Homeros_MFA_Munich_51.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Гомер <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../gomer/iliada/">Илиада</a>
     <a class="sdbr-wrk" href="../gomer/odisseya/">Одиссея</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ш. Перро <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="шарль">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../sh-perro/" aria-label="Страница автора Ш. Перро"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Charles_Perrault_d%C3%A9tail.jpg/330px-Charles_Perrault_d%C3%A9tail.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ш. Перро <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../sh-perro/krasnaya-shapochka/">Красная Шапочка</a>
     <a class="sdbr-wrk" href="../sh-perro/zolushka/">Золушка</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">братья Гримм <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="гримм">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../bratya-grimm/" aria-label="Страница автора братья Гримм"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Grimm.jpg/250px-Grimm.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">братья Гримм <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../bratya-grimm/genzel-i-gretel/">Гензель и Гретель</a>
     <a class="sdbr-wrk" href="../bratya-grimm/bremenskie-muzykanty/">Бременские музыканты</a>
     <a class="sdbr-wrk" href="../bratya-grimm/skazka-o-care-kolobke/">Сказка о царе Колобке</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж. Родари <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="родари">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-rodari/" aria-label="Страница автора Дж. Родари"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Gianni_Rodari_anni_cinquanta.jpg/330px-Gianni_Rodari_anni_cinquanta.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж. Родари <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-rodari/priklyucheniya-chipollino/">Приключения Чиполлино</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А. де Сент-Экзюпери <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="де">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-de-sent-ekzyuperi/" aria-label="Страница автора А. де Сент-Экзюпери"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Antoine_de_Saint-Exup%C3%A9ry.jpg/330px-Antoine_de_Saint-Exup%C3%A9ry.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А. де Сент-Экзюпери <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../a-de-sent-ekzyuperi/malenkij-princ/">Маленький принц</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Л. Карролл <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="карролл">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../l-karroll/" aria-label="Страница автора Л. Карролл"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Lewis_Carroll_%28Charles_Lutwidge_Dodgson%29_MET_DP-15137-001_%28cropped%29.jpg/250px-Lewis_Carroll_%28Charles_Lutwidge_Dodgson%29_MET_DP-15137-001_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Л. Карролл <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../l-karroll/alisa-v-strane-chudes/">Алиса в Стране чудес</a>
     <a class="sdbr-wrk" href="../l-karroll/priklyucheniya-alisy-v-zazerkale/">Приключения Алисы в Зазеркалье</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">М. Твен <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="твен">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../m-tven/" aria-label="Страница автора М. Твен"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/330px-Mark_Twain_by_AF_Bradley.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">М. Твен <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../m-tven/priklyucheniya-toma-sojera/">Приключения Тома Сойера</a>
     <a class="sdbr-wrk" href="../m-tven/priklyucheniya-geklberri-finna/">Приключения Гекльберри Финна</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж. К. Джером <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="джером">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-k-dzherom/" aria-label="Страница автора Дж. К. Джером"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Jerome_K._Jerome_%287893553318%29.jpg/330px-Jerome_K._Jerome_%287893553318%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж. К. Джером <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-k-dzherom/troe-v-lodke-ne-schitaya-sobaki/">Трое в лодке, не считая собаки</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Т. Рид <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="томас">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../t-rid/" aria-label="Страница автора Т. Рид"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Portrait_of_Thomas_Mayne_Reid%2C_circa_1850_%28cropped%29.jpg/330px-Portrait_of_Thomas_Mayne_Reid%2C_circa_1850_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Т. Рид <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../t-rid/vsadnik-bez-golovy/">Всадник без головы</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А. Дюма <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="александр">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-dyuma/" aria-label="Страница автора А. Дюма"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/CFP_Dumas%2C_Alexandre_%28p%C3%A8re%29_%282%29_%28cropped%29.jpg/330px-CFP_Dumas%2C_Alexandre_%28p%C3%A8re%29_%282%29_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А. Дюма <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../a-dyuma/tri-mushketera/">Три мушкетера</a>
     <a class="sdbr-wrk" href="../a-dyuma/graf-monte-kristo/">Граф Монте-Кристо</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Г.Дж. Уэллс <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="джордж">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../g-dzh-uells/" aria-label="Страница автора Г.Дж. Уэллс"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/H.G._Wells_by_Beresford.jpg/330px-H.G._Wells_by_Beresford.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Г.Дж. Уэллс <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../g-dzh-uells/vojna-mirov/">Война миров</a>
     <a class="sdbr-wrk" href="../g-dzh-uells/chelovek-nevidimka/">Человек-невидимка</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж. Свифт <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="свифт">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-svift/" aria-label="Страница автора Дж. Свифт"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Jervas-JonathanSwift.jpg/330px-Jervas-JonathanSwift.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж. Свифт <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-svift/puteshestviya-gullivera/">Путешествия Гулливера</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Э.М. Ремарк <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="ремарк">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../e-m-remark/" aria-label="Страница автора Э.М. Ремарк"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Erich_Maria_Remarque1.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Э.М. Ремарк <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../e-m-remark/tri-tovarischa/">Три товарища</a>
     <a class="sdbr-wrk" href="../e-m-remark/na-zapadnom-fronte-bez-peremen/">На западном фронте без перемен</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Т. Манн <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="манн">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../t-mann/" aria-label="Страница автора Т. Манн"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Thomas_Mann_1937.jpg/250px-Thomas_Mann_1937.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Т. Манн <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../t-mann/buddenbroki/">Будденброки</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">У. Фолкнер <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="фолкнер">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../u-folkner/" aria-label="Страница автора У. Фолкнер"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Carl_Van_Vechten_-_William_Faulkner.jpg/330px-Carl_Van_Vechten_-_William_Faulkner.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">У. Фолкнер <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../u-folkner/svet-v-avguste/">Свет в августе</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Э. Кестнер <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="кестнер">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../e-kestner/" aria-label="Страница автора Э. Кестнер"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Erich_K%C3%A4stner_1961.jpg/330px-Erich_K%C3%A4stner_1961.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Э. Кестнер <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../e-kestner/emil-i-detektivy/">Эмиль и детективы</a>
     <a class="sdbr-wrk" href="../e-kestner/tim-taler-ili-prodannyj-smeh/">Тим Талер, или Проданный смех</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж.Р.Р. Толкин <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="толкин">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-r-r-tolkin/" aria-label="Страница автора Дж.Р.Р. Толкин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg/330px-J._R._R._Tolkien%2C_ca._1925.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж.Р.Р. Толкин <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-r-r-tolkin/hobbit-ili-tuda-i-obratno/">Хоббит, или Туда и Обратно</a>
     <a class="sdbr-wrk" href="../dzh-r-r-tolkin/vlastelin-kolec/">Властелин колец</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А. Кристи <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="агата">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-kristi/" aria-label="Страница автора А. Кристи"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Agatha_Christie_in_Nederland_%28detectiveschrijfster%29%2C_bij_aankomst_op_Schiphol_me%2C_Bestanddeelnr_916-8898_%28cropped%29.jpg/250px-Agatha_Christie_in_Nederland_%28detectiveschrijfster%29%2C_bij_aankomst_op_Schiphol_me%2C_Bestanddeelnr_916-8898_%28cropped%29.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А. Кристи <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../a-kristi/ubijstvo-v-vostochnom-ekspresse/">Убийство в Восточном экспрессе</a>
     <a class="sdbr-wrk" href="../a-kristi/desyat-negrityat/">Десять негритят</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж.Д. Сэлинджер <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="сэлинджер">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-d-selindzher/" aria-label="Страница автора Дж.Д. Сэлинджер"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/J._D._Salinger_%28Catcher_in_the_Rye_portrait%29.jpg/330px-J._D._Salinger_%28Catcher_in_the_Rye_portrait%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж.Д. Сэлинджер <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-d-selindzher/nad-propastyu-vo-rzhi/">Над пропастью во ржи</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Г.Г. Маркес <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="гарсиа">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../g-g-markes/" aria-label="Страница автора Г.Г. Маркес"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Gabriel_Garcia_Marquez.jpg/250px-Gabriel_Garcia_Marquez.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Г.Г. Маркес <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../g-g-markes/sto-let-odinochestva/">Сто лет одиночества</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Р. Брэдбери <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="рэй">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../r-bredberi/" aria-label="Страница автора Р. Брэдбери"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Ray_Bradbury_%281975%29.jpg/330px-Ray_Bradbury_%281975%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Р. Брэдбери <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../r-bredberi/marsianskie-hroniki/">Марсианские хроники</a>
     <a class="sdbr-wrk" href="../r-bredberi/gradus-po-farengejtu/">451 градус по Фаренгейту</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж. Лондон <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="лондон">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-london/" aria-label="Страница автора Дж. Лондон"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Jack_London_young.jpg/330px-Jack_London_young.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж. Лондон <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-london/belyj-klyk/">Белый клык</a>
     <a class="sdbr-wrk" href="../dzh-london/zov-predkov/">Зов предков</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А. Конан Дойл <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="дойл">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-konan-dojl/" aria-label="Страница автора А. Конан Дойл"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Arthur_Conan_Doyle_by_Walter_Benington%2C_1914.png/330px-Arthur_Conan_Doyle_by_Walter_Benington%2C_1914.png?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А. Конан Дойл <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../a-konan-dojl/priklyucheniya-sherloka-holmsa/">Приключения Шерлока Холмса</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ж. Верн <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="верн">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../zh-vern/" aria-label="Страница автора Ж. Верн"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Jules_verne_nypl.jpg/330px-Jules_verne_nypl.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ж. Верн <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../zh-vern/dvadcat-tysyach-le-pod-vodoj/">Двадцать тысяч лье под водой</a>
     <a class="sdbr-wrk" href="../zh-vern/vokrug-sveta-za-vosem-dnej/">Вокруг света за восемь дней</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Майн Рид <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="рид">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../majn-rid/" aria-label="Страница автора Майн Рид"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Portrait_of_Thomas_Mayne_Reid%2C_circa_1850_%28cropped%29.jpg/330px-Portrait_of_Thomas_Mayne_Reid%2C_circa_1850_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Майн Рид <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../majn-rid/vsadnik-bez-golovy/">Всадник без головы</a>
   </details>
-  <details class="sdbr-auth" open>
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.Н. Носов <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="николаевич" open>
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-n-nosov/" aria-label="Страница автора Н.Н. Носов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%9D%D0%BE%D1%81%D0%BE%D0%B2%D0%B0.jpg/250px-%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F_%D0%9D%D0%BE%D1%81%D0%BE%D0%B2%D0%B0.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.Н. Носов <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../n-n-nosov/priklyucheniya-neznajki-i-ego-druzej/">Приключения Незнайки и его друзей</a>
     <a class="sdbr-wrk" href="../n-n-nosov/neznajka-v-solnechnom-gorode/">Незнайка в Солнечном городе</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">С.Н. Козлов <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="николаевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../s-n-kozlov/" aria-label="Страница автора С.Н. Козлов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/8/8a/%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%9A%D0%BE%D0%B7%D0%BB%D0%BE%D0%B2.jpg/250px-%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%9A%D0%BE%D0%B7%D0%BB%D0%BE%D0%B2.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">С.Н. Козлов <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../s-n-kozlov/ezhik-v-tumane/">Ёжик в тумане</a>
     <a class="sdbr-wrk" href="../s-n-kozlov/volk-i-tri-telenka/">Волк и три телёнка</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.Л. Барто <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="львовна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-l-barto/" aria-label="Страница автора А.Л. Барто"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Agniya_Barto_1969_%28cropped%29.jpg/330px-Agniya_Barto_1969_%28cropped%29.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.Л. Барто <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../a-l-barto/igrushki/">Игрушки</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Б.В. Заходер <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="владимирович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../b-v-zahoder/" aria-label="Страница автора Б.В. Заходер"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/ru/3/3b/Zahoder_b.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Б.В. Заходер <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../b-v-zahoder/v-strane-nevyuchennyh-urokov/">В стране невыученных уроков</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Л.Е. Успенский <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="евгеньевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../l-e-uspenskij/" aria-label="Страница автора Л.Е. Успенский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%D0%9B%D0%B5%D0%B2%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9.jpg/500px-%D0%9B%D0%B5%D0%B2%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Л.Е. Успенский <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../l-e-uspenskij/povest-o-neizvestnom-geroe/">Повесть о неизвестном герое</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.А. Дурова <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="андреевна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-a-durova/" aria-label="Страница автора Н.А. Дурова"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Nadezhda_Durova.jpg/250px-Nadezhda_Durova.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.А. Дурова <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../n-a-durova/kavalerist-devica/">Кавалерист-девица</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Э. Хемингуэй <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="эрнест">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../e-heminguej/" aria-label="Страница автора Э. Хемингуэй"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/8/8b/Yousuf-Karsh-Ernest-Hemingway-1957-1558x1960.jpg/250px-Yousuf-Karsh-Ernest-Hemingway-1957-1558x1960.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Э. Хемингуэй <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../e-heminguej/proschaj-oruzhie/">Прощай, оружие</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж. Оруэлл <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="джордж">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-oruell/" aria-label="Страница автора Дж. Оруэлл"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg/330px-George_Orwell%2C_c._1940_%2841928180381%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж. Оруэлл <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-oruell/skotnyj-dvor/">Скотный двор</a>
     <a class="sdbr-wrk" href="../dzh-oruell/x/">1984</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Дж. Голсуорси <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="джон">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../dzh-golsuorsi/" aria-label="Страница автора Дж. Голсуорси"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/John_Galsworthy_2.jpg/330px-John_Galsworthy_2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Дж. Голсуорси <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../dzh-golsuorsi/saga-o-forsajtah/">Сага о Форсайтах</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.С. Пикуль <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="саввич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-s-pikul/" aria-label="Страница автора В.С. Пикуль"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/ru/2/2d/Pikul.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.С. Пикуль <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../v-s-pikul/morskaya-sol/">Морская соль</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.И. Белов <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-i-belov/" aria-label="Страница автора В.И. Белов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/b/bc/%D0%91%D0%B5%D0%BB%D0%BE%D0%B2_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg/330px-%D0%91%D0%B5%D0%BB%D0%BE%D0%B2_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.И. Белов <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../v-i-belov/privychnoe-delo/">Привычное дело</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ф.А. Абрамов <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../f-a-abramov/" aria-label="Страница автора Ф.А. Абрамов"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/ru/1/16/%D0%90%D0%B1%D1%80%D0%B0%D0%BC%D0%BE%D0%B2_%D0%A4%D0%90.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ф.А. Абрамов <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../f-a-abramov/bratya-i-sestry/">Братья и сёстры</a>
     <a class="sdbr-wrk" href="../f-a-abramov/pelageya/">Пелагея</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.М. Рубцов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="михайлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-m-rubcov/" aria-label="Страница автора Н.М. Рубцов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/d/db/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%A0%D1%83%D0%B1%D1%86%D0%BE%D0%B2.jpg/250px-%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%A0%D1%83%D0%B1%D1%86%D0%BE%D0%B2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.М. Рубцов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../n-m-rubcov/tihaya-rus/">Тихая Русь</a>
     <a class="sdbr-wrk" href="../n-m-rubcov/vershina/">Вершина</a>
     <a class="sdbr-wrk" href="../n-m-rubcov/zhuravlinaya-rodoslovnaya/">Журавлиная родословная</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Б.Ш. Окуджава <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="шалвович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../b-sh-okudzhava/" aria-label="Страница автора Б.Ш. Окуджава"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/%D0%91%D1%83%D0%BB%D0%B0%D1%82_%D0%9E%D0%BA%D1%83%D0%B4%D0%B6%D0%B0%D0%B2%D0%B0.jpg/330px-%D0%91%D1%83%D0%BB%D0%B0%D1%82_%D0%9E%D0%BA%D1%83%D0%B4%D0%B6%D0%B0%D0%B2%D0%B0.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Б.Ш. Окуджава <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../b-sh-okudzhava/pesnya-o-neizvestnom-geroe/">Песня о неизвестном герое</a>
     <a class="sdbr-wrk" href="../b-sh-okudzhava/nam-nuzhna-odna-pobeda/">Нам нужна одна победа</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.С. Высоцкий <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="семёнович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-s-vysockij/" aria-label="Страница автора В.С. Высоцкий"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D1%8B%D1%81%D0%BE%D1%86%D0%BA%D0%B8%D0%B9_-_%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%28cropped%29.jpg/250px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D1%8B%D1%81%D0%BE%D1%86%D0%BA%D0%B8%D0%B9_-_%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%28cropped%29.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.С. Высоцкий <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../v-s-vysockij/pesnya-o-druge/">Песня о друге</a>
     <a class="sdbr-wrk" href="../v-s-vysockij/bratskie-mogily/">Братские могилы</a>
     <a class="sdbr-wrk" href="../v-s-vysockij/ispoved-kolabanta/">Исповедь колабанта</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.И. Галишин <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-i-galishin/" aria-label="Страница автора Н.И. Галишин"><span class="sdbr-av sdbr-av--ph" aria-hidden="true">Н</span></a><span class="sdbr-auth-lnk">Н.И. Галишин <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../n-i-galishin/smeh-v-abzace/">Смех в абзаце</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">И.А. Бродский <span class="sdbr-cnt">4</span></span></summary>
+  <details class="sdbr-auth" data-pop="4" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../i-a-brodskij/" aria-label="Страница автора И.А. Бродский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Joseph_Brodsky_1988.jpg/330px-Joseph_Brodsky_1988.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">И.А. Бродский <span class="sdbr-cnt">4</span></span></summary>
     <a class="sdbr-wrk" href="../i-a-brodskij/gost/">Гость</a>
     <a class="sdbr-wrk" href="../i-a-brodskij/rekviem/">Реквием</a>
     <a class="sdbr-wrk" href="../i-a-brodskij/zhene/">Жене</a>
     <a class="sdbr-wrk" href="../i-a-brodskij/piligrimy/">Пилигримы</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Н.А. Заболоцкий <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="алексеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../n-a-zabolockij/" aria-label="Страница автора Н.А. Заболоцкий"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/f/fc/%D0%97%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D1%86%D0%BA%D0%B8%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87.jpg/250px-%D0%97%D0%B0%D0%B1%D0%BE%D0%BB%D0%BE%D1%86%D0%BA%D0%B8%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Н.А. Заболоцкий <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../n-a-zabolockij/kolymskie-tetradi/">Колымские тетради</a>
     <a class="sdbr-wrk" href="../n-a-zabolockij/sad/">Сад</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">А.А. Тарковский <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="александрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../a-a-tarkovskij/" aria-label="Страница автора А.А. Тарковский"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B8%D0%B9_%D0%A2%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg/250px-%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B8%D0%B9_%D0%A2%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">А.А. Тарковский <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../a-a-tarkovskij/ya-ne-obmanyvayu-samogo-sebya/">Я не обманываю самого себя</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Д.С. Самойлов <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="самойлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../d-s-samojlov/" aria-label="Страница автора Д.С. Самойлов"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/ru/0/0d/Samojlov.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Д.С. Самойлов <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../d-s-samojlov/dorozhnaya-pesenka/">Дорожная песенка</a>
     <a class="sdbr-wrk" href="../d-s-samojlov/na-privale/">На привале</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Т.Н. Матвеева <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="николаевна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../t-n-matveeva/" aria-label="Страница автора Т.Н. Матвеева"><span class="sdbr-av sdbr-av--ph" aria-hidden="true">Т</span></a><span class="sdbr-auth-lnk">Т.Н. Матвеева <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../t-n-matveeva/esli-ya-umru/">Если я умру</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Ю.П. Казаков <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="павлович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../yu-p-kazakov/" aria-label="Страница автора Ю.П. Казаков"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/4/41/%D0%AE%D1%80%D0%B8%D0%B9_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2.jpg/250px-%D0%AE%D1%80%D0%B8%D0%B9_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BA%D0%BE%D0%B2.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Ю.П. Казаков <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../yu-p-kazakov/sinij-stol/">Синий стол</a>
     <a class="sdbr-wrk" href="../yu-p-kazakov/odin-den-ivana-denisovicha/">Один день Ивана Денисовича</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Д.Н. Мамин-Сибиряк <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="наркисович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../d-n-mamin-sibiryak/" aria-label="Страница автора Д.Н. Мамин-Сибиряк"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Dmitry_Narkisovich_Mamin-Sibiryak.jpg/250px-Dmitry_Narkisovich_Mamin-Sibiryak.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Д.Н. Мамин-Сибиряк <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../d-n-mamin-sibiryak/alenushkiny-skazki/">Алёнушкины сказки</a>
     <a class="sdbr-wrk" href="../d-n-mamin-sibiryak/vachega/">Вачега</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">П.П. Бажов <span class="sdbr-cnt">3</span></span></summary>
+  <details class="sdbr-auth" data-pop="3" data-az="петрович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../p-p-bazhov/" aria-label="Страница автора П.П. Бажов"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%D0%B2_1911_%D0%B3%D0%BE%D0%B4%D1%83.jpg/330px-%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%D0%B2_1911_%D0%B3%D0%BE%D0%B4%D1%83.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">П.П. Бажов <span class="sdbr-cnt">3</span></span></summary>
     <a class="sdbr-wrk" href="../p-p-bazhov/mednaya-gorka/">Медная горка</a>
     <a class="sdbr-wrk" href="../p-p-bazhov/serebryanoe-kopytce/">Серебряное копытце</a>
     <a class="sdbr-wrk" href="../p-p-bazhov/golubaya-kolokolchik/">Голубая колокольчик</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">Е.И. Чарушин <span class="sdbr-cnt">2</span></span></summary>
+  <details class="sdbr-auth" data-pop="2" data-az="иванович">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../e-i-charushin/" aria-label="Страница автора Е.И. Чарушин"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/ru/thumb/7/7c/%D0%A7%D0%B0%D1%80%D1%83%D1%88%D0%B8%D0%BD_%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg/330px-%D0%A7%D0%B0%D1%80%D1%83%D1%88%D0%B8%D0%BD_%D0%95%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">Е.И. Чарушин <span class="sdbr-cnt">2</span></span></summary>
     <a class="sdbr-wrk" href="../e-i-charushin/volchya-yama/">Волчья яма</a>
     <a class="sdbr-wrk" href="../e-i-charushin/toptygin-volk/">Топтыгин-волк</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">И.П. Грекова <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="платоновна">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../i-p-grekova/" aria-label="Страница автора И.П. Грекова"><img class="sdbr-av" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Elena_CHizhova_2017.jpg/500px-Elena_CHizhova_2017.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">И.П. Грекова <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../i-p-grekova/v-laboratorii/">В лаборатории</a>
   </details>
-  <details class="sdbr-auth">
-    <summary class="sdbr-auth-hd"><span class="sdbr-auth-lnk">В.А. Чивилихин <span class="sdbr-cnt">1</span></span></summary>
+  <details class="sdbr-auth" data-pop="1" data-az="алексеевич">
+    <summary class="sdbr-auth-hd"><a class="sdbr-avlnk" href="../v-a-chivilihin/" aria-label="Страница автора В.А. Чивилихин"><img class="sdbr-av" src="https://upload.wikimedia.org/wikipedia/ru/b/b9/%D0%A7%D0%B8%D0%B2%D0%B8%D0%BB%D0%B8%D1%85%D0%B8%D0%BD_%D0%90.jpg" alt="" loading="lazy"></a><span class="sdbr-auth-lnk">В.А. Чивилихин <span class="sdbr-cnt">1</span></span></summary>
     <a class="sdbr-wrk" href="../v-a-chivilihin/pamyat/">Память</a>
   </details>
 </aside>

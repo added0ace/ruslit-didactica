@@ -185,3 +185,115 @@ if (!nM) {
     if (l) l.remove();
   });
 }
+
+const POS_L = "txt-pos:";
+const pgnt = (t, cap) => {
+  const pages = [];
+  let cur = "";
+  for (const ln of t.split("\n")) {
+    const add = cur ? "\n" + ln : ln;
+    if (cur && cur.length + add.length > cap) {
+      pages.push(cur);
+      cur = ln;
+    } else {
+      cur += add;
+    }
+  }
+  if (cur) pages.push(cur);
+  return pages.length ? pages : [""];
+};
+
+sll("details.dtl[data-src]").forEach((dtl) => {
+  const src = dtl.getAttribute("data-src");
+  const cap = parseInt(dtl.getAttribute("data-cap"), 10) || 30000;
+  const total = Math.max(1, parseInt(dtl.getAttribute("data-total"), 10) || 1);
+  const key = dtl.getAttribute("data-key") || "";
+  const txtEl = dtl.querySelector(".txt");
+  if (!txtEl) return;
+  let pages = null;
+  let loading = null;
+  let i = 0;
+  let rsd = false;
+  const saved = key ? parseInt(strg.getItem(POS_L + key) || "0", 10) || 0 : 0;
+  const max = () => (pages ? pages.length : total);
+  const paint = () => {
+    if (pages) txtEl.textContent = pages[Math.min(i, pages.length - 1)];
+    sll(".txt-page", dtl).forEach((e) => (e.textContent = `Стр. ${i + 1} из ${max()}`));
+    sll(".txt-cur", dtl).forEach((e) => (e.textContent = String(i + 1)));
+    sll(".txt-prev", dtl).forEach((b) => (b.disabled = i <= 0));
+    sll(".txt-next", dtl).forEach((b) => (b.disabled = i >= max() - 1));
+    sll(".txt-rst", dtl).forEach((b) => (b.hidden = i <= 0));
+  };
+  const load = () => {
+    if (pages) return Promise.resolve(pages);
+    if (!loading) {
+      loading = fetch(src)
+        .then((r) => r.text())
+        .then((t) => {
+          pages = pgnt(t, cap);
+          return pages;
+        });
+    }
+    return loading;
+  };
+  const navEl = dtl.querySelector(".txt-nav");
+  const goto = (n, scroll) => {
+    const run = () => {
+      i = Math.max(0, Math.min(n, max() - 1));
+      if (key) strg.setItem(POS_L + key, String(i));
+      paint();
+      if (scroll) (navEl || txtEl).scrollIntoView({ behavior: nM ? "auto" : "smooth", block: "start" });
+    };
+    if (pages || n <= 0) {
+      run();
+      return;
+    }
+    load().then(run);
+  };
+  dtl.addEventListener("click", (e) => {
+    const b = e.target && e.target.closest ? e.target.closest("button") : null;
+    if (!b || !dtl.contains(b)) return;
+    if (b.classList.contains("txt-prev")) goto(i - 1, true);
+    else if (b.classList.contains("txt-next")) goto(i + 1, true);
+    else if (b.classList.contains("txt-top")) txtEl.scrollIntoView({ behavior: nM ? "auto" : "smooth", block: "start" });
+    else if (b.classList.contains("txt-rst")) goto(0, true);
+  });
+  paint();
+  if (saved > 0 && saved < total) {
+    dtl.addEventListener("toggle", () => {
+      if (!dtl.open || rsd) return;
+      rsd = true;
+      load().then(() => {
+        goto(saved, false);
+        sll(".txt-nav", dtl).forEach((n) => {
+          n.classList.add("txt-nav--pulse");
+          window.setTimeout(() => n.classList.remove("txt-nav--pulse"), 800);
+        });
+      });
+    });
+  }
+});
+
+const applySort = (mode) => {
+  if (!sdbr) return;
+  const items = sll(".sdbr-auth", sdbr);
+  items.sort((x, y) => {
+    if (mode === "az") {
+      return (x.getAttribute("data-az") || "").localeCompare(y.getAttribute("data-az") || "", "ru");
+    }
+    return (+y.getAttribute("data-pop") || 0) - (+x.getAttribute("data-pop") || 0);
+  });
+  items.forEach((el) => sdbr.appendChild(el));
+  sll(".sdbr-sort-btn").forEach((b) => b.classList.toggle("md3-chip-strong", b.getAttribute("data-sort") === mode));
+  strg.setItem("sdbr-sort", mode);
+};
+sll(".sdbr-sort-btn").forEach((b) => b.addEventListener("click", () => applySort(b.getAttribute("data-sort"))));
+if (sdbr) applySort(strg.getItem("sdbr-sort") || "pop");
+
+sll("a.sdbr-avlnk").forEach((a) => {
+  a.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    location.href = a.href;
+  });
+});
